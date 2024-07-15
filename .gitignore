@@ -1,0 +1,86 @@
+# Ignore for all languages
+*.log
+*.tmp
+*.swp
+*.DS_Store
+*.env
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
+tmp/
+
+# C# specific ignores
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# Java specific ignores
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+target/
+
+# Kotlin specific ignores
+*.class
+*.jar
+*.iml
+*.ipr
+*.iws
+build/
+
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+*.egg-info/
+.eggs/
+
+# TypeScript specific ignores
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Global ignore for macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+._*
+
+# Thumbnails
+._.DS_Store
+._.AppleDouble
+._.LSOverride
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.com.apple.timemachine.supported
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
