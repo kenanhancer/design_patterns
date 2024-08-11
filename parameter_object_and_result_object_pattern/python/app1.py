@@ -11,25 +11,31 @@ class UserParams:
 # Method to create a new user with UserParams object as a parameter
 def create_user(user_params: UserParams):
     print(
-        f"Creating user with name: {user_params.name}, age: {user_params.age}, address: {user_params.address}, email: {user_params.email}, phone: {user_params.phone}"
+        f"Creating user with name: {user_params.name}, "
+        "age: {user_params.age}, address: {user_params.address}, "
+        "email: {user_params.email}, phone: {user_params.phone}"
     )
 
 
 # Method to update a user with UserParams object as a parameter
 def update_user(user_id: int, user_params: UserParams):
     print(
-        f"Updating user with ID: {user_id} with name: {user_params.name}, age: {user_params.age}, address: {user_params.address}, email: {user_params.email}, phone: {user_params.phone}"
+        f"Updating user with ID: {user_id} with name: {user_params.name}, "
+        "age: {user_params.age}, address: {user_params.address}, "
+        "email: {user_params.email}, phone: {user_params.phone}"
     )
 
 
 # Method to display user information
 def display_user(user_params: UserParams):
     print(
-        f"User Info - Name: {user_params.name}, Age: {user_params.age}, Address: {user_params.address}, Email: {user_params.email}, Phone: {user_params.phone}"
+        f"User Info - Name: {user_params.name}, "
+        "Age: {user_params.age}, Address: {user_params.address}, "
+        "Email: {user_params.email}, Phone: {user_params.phone}"
     )
 
 
-if __name__ == "__main__":
+def main():
     # Creating a UserParams object and passing it to the methods
     user_params = UserParams(
         name="John",
@@ -42,3 +48,7 @@ if __name__ == "__main__":
     create_user(user_params)
     update_user(user_id=1, user_params=user_params)
     display_user(user_params)
+
+
+if __name__ == "__main__":
+    main()

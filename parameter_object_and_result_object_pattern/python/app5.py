@@ -46,7 +46,9 @@ class User:
 def create_user(user_id: str, user_params: UserParams):
     new_user = User.create_from_params(user_id, user_params)
     print(
-        f"Creating user with ID: {new_user.user_id}, name: {new_user.name}, age: {new_user.age}, address: {new_user.address}, email: {new_user.email}, phone: {new_user.phone}"
+        f"Creating user with ID: {new_user.user_id}, "
+        "name: {new_user.name}, age: {new_user.age}, "
+        "address: {new_user.address}, email: {new_user.email}, phone: {new_user.phone}"
     )
     return new_user
 
@@ -54,7 +56,9 @@ def create_user(user_id: str, user_params: UserParams):
 def update_user(user: User, user_params: UserParams):
     user.update_with_params(user_params)
     print(
-        f"Updating user with name: {user.name}, age: {user.age}, address: {user.address}, email: {user.email}, phone: {user.phone}"
+        f"Updating user with name: {user.name}, "
+        "age: {user.age}, address: {user.address}, "
+        "email: {user.email}, phone: {user.phone}"
     )
     return user
 
@@ -93,7 +97,7 @@ class UserCommandExecutor:
         return result
 
 
-if __name__ == "__main__":
+def main():
     user_command_executor = UserCommandExecutor()
 
     # Creating a new user
@@ -124,3 +128,7 @@ if __name__ == "__main__":
     print(f"Created User: {new_user}")
     print(f"Updated User: {updated_user}")
     print(f"Command History: {user_command_executor.history}")
+
+
+if __name__ == "__main__":
+    main()
