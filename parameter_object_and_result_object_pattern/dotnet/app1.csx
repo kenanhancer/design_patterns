@@ -1,26 +1,3 @@
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-// | Access Modifier |          C# (Class Members)   |       Java (Class Members)    | Python & TypeScript (Class Members)   |
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-// | public          | Accessible from any code.     | Accessible from any code.     | Accessible from any code.             |
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-// | private         | Accessible only within the    | Accessible only within the    | Python: Naming convention (e.g., _var)|
-// |                 | same class.                   | same class.                   | TypeScript: Accessible only within    |
-// |                 |                               |                               | the same class.                       |
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-// | protected       | Accessible within the same    | Accessible within the same    | TypeScript: Accessible within the     |
-// |                 | class and derived classes.    | class and derived classes.    | same class and derived classes.       |
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-// | internal        | Accessible within the same    | N/A                           | N/A                                   |
-// |                 | assembly.                     |                               |                                       |
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-// | protected       | Accessible within the same    | Accessible within the same    | TypeScript: Accessible within the     |
-// | internal        | assembly and derived classes. | package and derived classes.  | same package and derived classes.     |
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-// |  **Default**    | **Private**                   | **Package-private (default)** | **Public**                            |
-// | (No Modifier)   |                               |                               |                                       |
-// +-----------------+-------------------------------+-------------------------------+---------------------------------------+
-
-
 // Define the UserParams class to encapsulate the parameters for the CreateUser method
 class UserParams
 {
@@ -30,7 +7,7 @@ class UserParams
     public string Email;
     public string Phone;
 
-    public UserParams(string name, int age, string address, string email, string phone)
+    UserParams(string name, int age, string address, string email, string phone)
     {
         Name = name;
         Age = age;

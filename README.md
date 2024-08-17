@@ -6,6 +6,7 @@ Welcome to the Design Patterns Project! This repository contains examples and im
 
 - [Introduction](#introduction)
 - [Languages Used](#languages-used)
+- [Access Modifiers](#access-modifiers)
 - [Design Patterns Implemented](#design-patterns-implemented)
 - [Setup Instructions](#setup-instructions)
 - [Contributing](#contributing)
@@ -26,6 +27,18 @@ The following languages are used in this project:
 - TypeScript
 
 Each language has its own directory containing the implementations of the design patterns.
+
+## Access Modifiers
+
+
+| Access Modifier | C# (Class Members) | Java (Class Members) | Python & TypeScript (Class Members) |
+|-----------------|--------------------|----------------------|---------------------------------------|
+| public          | Accessible from any code. | Accessible from any code. | Accessible from any code. |
+| private         | Accessible only within the same class. | Accessible only within the same class. | Python: Naming convention (e.g., _var) |
+| protected       | Accessible within the same class and derived classes. | Accessible within the same class and derived classes. | TypeScript: Accessible within the same class and derived classes. |
+| internal        | Accessible within the same assembly. | N/A | N/A |
+| protected internal | Accessible within the same assembly and derived classes. | Accessible within the same package and derived classes. | TypeScript: Accessible within the same package and derived classes. |
+| Default (No Modifier) | Private | Package-private (default) | Public |
 
 ## Design Patterns Implemented
 
