@@ -63,3 +63,5 @@ function displayUser(userParams: UserParams): void {
   updateUser(1, userParams);
   displayUser(userParams);
 })();
+
+export { }
