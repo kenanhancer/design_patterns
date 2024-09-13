@@ -7,7 +7,7 @@ class UserParams
     public string Email;
     public string Phone;
 
-    UserParams(string name, int age, string address, string email, string phone)
+    public UserParams(string name, int age, string address, string email, string phone)
     {
         Name = name;
         Age = age;
