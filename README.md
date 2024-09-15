@@ -30,21 +30,21 @@ Each language has its own directory containing the implementations of the design
 
 ## Access Modifiers
 
-
-| Access Modifier | C# (Class Members) | Java (Class Members) | Python & TypeScript (Class Members) |
-|-----------------|--------------------|----------------------|---------------------------------------|
-| public          | Accessible from any code. | Accessible from any code. | Accessible from any code. |
-| private         | Accessible only within the same class. | Accessible only within the same class. | Python: Naming convention (e.g., _var) |
-| protected       | Accessible within the same class and derived classes. | Accessible within the same class and derived classes. | TypeScript: Accessible within the same class and derived classes. |
-| internal        | Accessible within the same assembly. | N/A | N/A |
-| protected internal | Accessible within the same assembly and derived classes. | Accessible within the same package and derived classes. | TypeScript: Accessible within the same package and derived classes. |
-| Default (No Modifier) | Private | Package-private (default) | Public |
+| Access Modifier       | C# (Class Members)                                       | Java (Class Members)                                    | Python & TypeScript (Class Members)                                 |
+| --------------------- | -------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------- |
+| public                | Accessible from any code.                                | Accessible from any code.                               | Accessible from any code.                                           |
+| private               | Accessible only within the same class.                   | Accessible only within the same class.                  | Python: Naming convention (e.g., \_var)                             |
+| protected             | Accessible within the same class and derived classes.    | Accessible within the same class and derived classes.   | TypeScript: Accessible within the same class and derived classes.   |
+| internal              | Accessible within the same assembly.                     | N/A                                                     | N/A                                                                 |
+| protected internal    | Accessible within the same assembly and derived classes. | Accessible within the same package and derived classes. | TypeScript: Accessible within the same package and derived classes. |
+| Default (No Modifier) | Private                                                  | Package-private (default)                               | Public                                                              |
 
 ## Design Patterns Implemented
 
 Below is a list of design patterns implemented in this repository:
 
 1. **Creational Patterns**
+
    - Singleton
    - Factory Method
    - Abstract Factory
@@ -52,6 +52,7 @@ Below is a list of design patterns implemented in this repository:
    - Prototype
 
 2. **Structural Patterns**
+
    - Adapter
    - Bridge
    - Composite
@@ -119,6 +120,112 @@ Contributions are welcome! If you have a new design pattern to add or improvemen
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
 
+## Prerequisites
+
+Before setting up the project, ensure you have the following prerequisites installed:
+
+### Runtime Version Manager
+
+We recommend using [asdf](https://asdf-vm.com/) to manage runtime versions for different languages.
+
+#### Installing asdf
+
+For more details for detailed installation check [asdf Getting Started](https://asdf-vm.com/guide/getting-started.html)
+
+#### macOS
+
+You can install `asdf` using Homebrew:
+
+1.  Install `asdf`:
+    ```sh
+    brew install asdf
+    ```
+2.  Add `asdf` to your shell:
+    ```sh
+    echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.bash_profile
+    source ~/.bash_profile
+    ```
+
+Now you can proceed with installing the required runtimes as described in the Prerequisites section./.bashrc
+
+### .NET
+
+Install .NET 7 and .NET 8 using asdf:
+
+1. Add the .NET plugin:
+```sh
+asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.git
+````
+
+2. Install .NET 7:
+   ```sh
+   asdf install dotnet-core 7.0.0
+   asdf global dotnet-core 7.0.0
+   ```
+3. Install .NET 8:
+   ```sh
+   asdf install dotnet-core 8.0.0
+   asdf global dotnet-core 8.0.0
+   ```
+
+### Java
+
+Install Java using asdf:
+
+1. Add the Java plugin:
+   ```sh
+   asdf plugin-add java https://github.com/halcyon/asdf-java.git
+   ```
+2. Install Java:
+   ```sh
+   asdf install java adoptopenjdk-11.0.11+9
+   asdf global java adoptopenjdk-11.0.11+9
+   ```
+
+### Python
+
+Install Python using asdf:
+
+1. Add the Python plugin:
+   ```sh
+   asdf plugin-add python
+   ```
+2. Install Python:
+   ```sh
+   asdf install python 3.9.5
+   asdf global python 3.9.5
+   ```
+
+### Go
+
+Install Go using asdf:
+
+1. Add the Go plugin:
+   ```sh
+   asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+   ```
+2. Install Go:
+   ```sh
+   asdf install golang 1.16.3
+   asdf global golang 1.16.3
+   ```
+
+## Recommended VSCode Extensions
+
+To enhance your development experience, consider installing the following Visual Studio Code extensions:
+
+- **C#**: [C# for Visual Studio Code (powered by OmniSharp)](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+- **Java**: [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+- **Kotlin**: [Kotlin Language](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin)
+- **Python**: [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- **TypeScript**: [TypeScript and JavaScript Language Features](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
+
+These extensions provide language support, debugging capabilities, and other useful features to streamline your workflow.
+
 ## License
+
+- **Code Runner**: [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+
+This extension allows you to run code snippets or files for multiple languages, including C#, Java, Kotlin, Python, and TypeScript, directly within Visual Studio Code.
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
