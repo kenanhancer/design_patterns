@@ -11,7 +11,7 @@ class UserParams
     {
         get => _name;
         set = _name = value;
-        }
+    }
 
     public int Age
     {
