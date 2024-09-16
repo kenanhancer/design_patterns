@@ -114,6 +114,7 @@ To run the examples, follow the instructions for each language:
 
 Contributions are welcome! If you have a new design pattern to add or improvements to existing implementations, feel free to fork the repository and submit a pull request.
 
+
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
 3. Commit your changes (`git commit -m 'Add new feature'`).
