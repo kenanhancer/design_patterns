@@ -1,3 +1,5 @@
+package parameter_object_and_result_object_pattern.mix_exercises.demo1;
+
 class UserParams {
     private String name;
     private int age;
@@ -19,7 +21,7 @@ class UserParams {
         return this.name;
     }
 
-    public String setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -27,7 +29,7 @@ class UserParams {
         return this.age;
     }
 
-    public int setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -35,7 +37,7 @@ class UserParams {
         return this.address;
     }
 
-    public String setAddress(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
@@ -43,7 +45,7 @@ class UserParams {
         return this.email;
     }
 
-    public String setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
@@ -51,7 +53,7 @@ class UserParams {
         return this.phone;
     }
 
-    public String setPhone(String phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -59,7 +61,16 @@ class UserParams {
         return this.username;
     }
 
-    public String setUsername(String username) {
+    public void setUsername(String username) {
         this.username = username;
+    }
+}
+
+public class app1 {
+    public static void main(String[] args) {
+        UserParams user = new UserParams("John", 30, "123 Main St", "", "", "john123");
+
+        System.out.println("Name: " + user.getName());
+        System.out.println("Age: " + user.getAge());
     }
 }

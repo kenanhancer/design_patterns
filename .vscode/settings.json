@@ -1,10 +1,24 @@
 {
-    "code-runner.executorMap": {
-      "typescript": "npx ts-node",
-    },
-    "code-runner.executorMapByGlob": {
-      "*.cs": "dotnet run",
-      "*.csx": "dotnet tool run dotnet-script"
-    },
-  }
-  
+  "code-runner.executorMap": {
+    "typescript": "npx ts-node",
+    "java": "cd $dir && javac --enable-preview --release 22 $fileName && java -cp $workspaceRoot --enable-preview mix_exercises.demo1.$fileNameWithoutExt"
+  },
+  "code-runner.executorMapByGlob": {
+    "*.cs": "dotnet run",
+    "*.csx": "dotnet tool run dotnet-script"
+  },
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": false,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-22",
+      "path": "/Users/kenanhancer/.asdf/installs/java/adoptopenjdk-22.0.2+9",
+      "default": true
+    }
+  ],
+  "java.debug.settings.vmArgs": "--enable-preview",
+  "java.project.sourcePaths": [
+    "."
+  ],
+  "java.project.referencedLibraries": []
+}

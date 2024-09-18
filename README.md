@@ -158,6 +158,12 @@ Install .NET 7 and .NET 8 using asdf:
 asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.git
 ````
 
+Add the following command to your `.zshrc` to set the .NET home:
+```sh
+echo -e "\n. ~/.asdf/plugins/dotnet-core/set-dotnet-home.zsh" >> ~/.zshrc
+source ~/.zshrc
+```
+
 2. Install .NET 7:
    ```sh
    asdf install dotnet-core 7.0.0

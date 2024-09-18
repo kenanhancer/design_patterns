@@ -1,12 +1,9 @@
-List<string> names = new List<string> { "John", "Jane", "Jack", "Jill" };
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+List<string> fruits = new List<string> { "apple", "banana", "cherry" };
 
-names.Add("Jesse");
 
-var query = from name in names
-            where name.StartsWith("J")
-            select name;
+// numbers.ForEach(Console.WriteLine);
+// fruits.ForEach(Console.WriteLine);
 
-Console.WriteLine("Names starting with 'J':");
-Console.WriteLine(string.Join(", ", query));
-
-WriteLine("Hello from app1.csx");
+Console.WriteLine("[" + string.Join(", ", numbers) + "]");
+Console.WriteLine($"[{string.Join(", ", numbers)}]");

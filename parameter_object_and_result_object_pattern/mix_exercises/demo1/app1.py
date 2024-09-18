@@ -27,7 +27,8 @@ class UserParams2:
         self.email = email
         self.phone = phone
         self.user_name = user_name
-        
+
+
 @dataclass
 class UserParams3:
     name: str
@@ -35,11 +36,7 @@ class UserParams3:
     address: str
     emai: str
     phone: str
-    user_name: str = None)
-    
-
-
-class UserParams4:
+    user_name: str = None
 
 
 user1 = UserParams("John", 30, "123 Main St", "", "555-1234", "john_doe")
