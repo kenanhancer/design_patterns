@@ -63,3 +63,41 @@ var oddNumbersLessThan10 = Enumerable.Range(1, 20).Where(x => x % 2 != 0 && x < 
 
 // 21. Words list
 List<string> words = new List<string> { "book", "elephant", "sun", "encyclopedia", "apple" };
+
+// 22. Words that have length greater than 5
+var wordsGreaterThan5 = words.Where(word => word.Length > 5).ToList();
+
+// 23. 3D Matrix
+List<List<List<int>>> matrix3D = new List<List<List<int>>>
+{
+    new List<List<int>> { new List<int> { 1, 2, 3 }, new List<int> { 4, 5, 6 } },
+    new List<List<int>> { new List<int> { 7, 8, 9 }, new List<int> { 10, 11, 12 } },
+    new List<List<int>> { new List<int> { 13, 14, 15 }, new List<int> { 16, 17, 18 } },
+    new List<List<int>> { new List<int> { 19, 20, 21 }, new List<int> { 22, 23, 24 } }
+};
+
+// 24. 3D Matrix simplified
+int[,,] matrix3D_v1 = new int[,,]
+{
+    {
+        { 1, 2, 3 },
+        { 4, 5, 6 }
+    },
+    {
+        { 7, 8, 9 },
+        { 10, 11, 12 }
+    },
+    {
+        { 13, 14, 15 },
+        { 16, 17, 18 }
+    },
+    {
+        { 19, 20, 21 },
+        { 22, 23, 24 }
+    }
+};
+
+// 25. Flatten 3D Matrix
+var flattenedMatrix = matrix3D.SelectMany(row => row.SelectMany(subList => subList)).ToList();
+
+

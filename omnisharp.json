@@ -1,6 +1,8 @@
 {
   "script": {
     "enableScriptNuGetReferences": true,
-    "defaultTargetFramework": "net8.0"
-  }
+    "defaultTargetFramework": "net8.0",
+    "enablePreviewFeatures": true
+  },
+  "languageVersion": "preview"
 }
