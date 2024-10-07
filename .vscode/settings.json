@@ -17,8 +17,6 @@
     }
   ],
   "java.debug.settings.vmArgs": "--enable-preview",
-  "java.project.sourcePaths": [
-    "."
-  ],
-  "java.project.referencedLibraries": []
+  "java.project.sourcePaths": ["."],
+  "java.project.referencedLibraries": [],
 }

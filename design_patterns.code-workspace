@@ -2,6 +2,15 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "mix_exercises/demo3/fast_api_demo1"
+		},
+		{
+			"path": "mix_exercises/demo3/fast_api_demo2"
+		},
+		{
+			"path": "mix_exercises/demo3/fast_api_demo3"
 		}
 	],
 	"settings": {
