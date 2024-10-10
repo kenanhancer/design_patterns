@@ -52,6 +52,17 @@
       },
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false
+    },
+    {
+      "name": "Python: Uvicorn",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "python": ".venv/bin/python",
+      "args": ["main:app", "--reload"],
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal",
+      "jinja": true
     }
   ]
 }
