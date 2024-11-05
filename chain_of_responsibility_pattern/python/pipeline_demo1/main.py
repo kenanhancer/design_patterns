@@ -1,6 +1,7 @@
 import logging
 from pipeline import build_pipeline
 from rules import (
+    check_circuit_breaker,
     error_handler,
     check_data_completeness,
     validate_account_numbers,
@@ -40,6 +41,7 @@ def main():
 
     # Build the middleware pipeline
     middlewares = [
+        check_circuit_breaker,  # Check if circuit breaker is open before processing
         error_handler,
         check_data_completeness,
         validate_account_numbers,
